@@ -41,7 +41,8 @@ You need:
 Tested on the SIMH 3B2/400 with SVR3.2 and the dmd5620 emulator. The
 ready to run SIMH kit
 [att3b2-400-svr32-simh.tar.lz](https://files.42718.net/mirror/tenox/os/att/3b2/att3b2-400-svr32-simh.tar.lz)
-has all of the above. Not tested yet on a real 3B2 or a real DMD 5620.
+has all of the above, and Micropolis is installed in it. Not tested yet
+on a real 3B2 or a real DMD 5620.
 
 ## Run
 
@@ -50,10 +51,10 @@ has all of the above. Not tested yet on a real 3B2 or a real DMD 5620.
    the space below it: notices bottom left, the map bottom right.
 2. In that layer:
    ```
-   DMD=/usr/dmd; export DMD
    /usr/dmd/bin/mcity /usr/dmd/lib/mcity/cities/haight.cty
    ```
-   Without a city file it makes a new city.
+   Without a city file it makes a new city. If the DMD software is not
+   in `/usr/dmd`, set `DMD` to its folder first.
 3. The 3 DMD programs load in about 1 minute at 19200 baud. The city
    shows at once. The tile art comes after it: until then, each tile
    shows as a 4x4 picture.
